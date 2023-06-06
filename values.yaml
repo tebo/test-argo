@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: tebo/kaniko-demo-image
+  repository: harbor.et.bo/endeges/endeges:3.0
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -76,7 +76,7 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 nodeSelector: 
-  node-type: infra
+node-type: infra
 
 tolerations: []
 
